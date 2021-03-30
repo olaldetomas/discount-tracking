@@ -1,4 +1,4 @@
-package com.discount.tracking.models;
+package com.discount.tracking.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import java.util.Date;
 
 @Data
 @AllArgsConstructor
-public class Payment {
+public class PaymentDto {
     public long id;
     public String reason;
     public String currency_id;
@@ -19,7 +19,6 @@ public class Payment {
     public Date date_created;
     public Date date_approved;
     public Date last_modified;
-
-    public Payment() {
+    public PaymentDto() {
     }
 }

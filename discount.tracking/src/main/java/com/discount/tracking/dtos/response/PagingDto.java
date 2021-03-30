@@ -1,15 +1,15 @@
-package com.discount.tracking.models;
+package com.discount.tracking.dtos.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Paging {
+public class PagingDto {
     int limit;
     int total;
     int offset;
 
-    public Paging() {
+    public PagingDto() {
     }
 }
