@@ -1,12 +1,16 @@
-package com.discount.tracking.Dto;
+package com.discount.tracking.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+
 import java.util.ArrayList;
 
 @Data
 @AllArgsConstructor
 public class ResponsePayment {
     public Paging paging;
-    public ArrayList<Payment> results;
+    public ArrayList<PaymentItem> results;
+
+    public ResponsePayment() {
+    }
 }
